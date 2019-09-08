@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PIZZA</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1>YUMMY PIZZA</h1>
+		<p>Check down below how to create your own pizzas!!!</p>
+	</header>
+	
+	<nav>
+		<div id="nav">
+			<!--Displaying buttons-->
+			<div>
+				<button class="nav-btn tiles active" onclick="titleView()">Tiles</button>
+			</div>
+			<div>
+				<button class="nav-btn list" onclick="listView()">List</button>
+			</div>
+			
+			<!--Basket-->
+			<div id="basket">
+				<div>
+					<p>Basket</p>
+					<p id="inBasket">0</p>
+					<button id="reset-basket">Reset</button>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="sorting-nav">
+			<!--Sorting buttons-->		
+			<div id="sort" class="hidden">
+				<p>Sort by...</p>
+				<div>
+					<button class="btn sort price">price</button>
+					<button class="btn sort calories">calories</button>
+					<button class="btn sort title">title</button>
+				</div>
+			</div>
+			
+			<!--Filter radio-->			
+			<div id="filter" class="active">
+				<p>Choose any filter...</p>	
+				<label class="container">VEGETARIAN
+  					<input type="radio" checked="checked" name="radio">
+  					<span class="checkmark"></span>
+				</label>
+				<label class="container">MEAT
+  					<input type="radio" name="radio">
+  					<span class="checkmark"></span>
+				</label>
+				<label class="container">SEAFOOD
+  					<input type="radio" name="radio">
+  					<span class="checkmark"></span>
+				</label>
+				<label class="container">CHEESE
+  					<input type="radio" name="radio">
+  					<span class="checkmark"></span>
+				</label>
+			</div>
+		</div>
+	</nav>
+	
+	
+	
+	<main>
+		<div id="wrapper">
+			<ul id="menu">
+		
+			</ul>
+		</div>
+	</main>
+	
+	
+	
+	<footer>
+		<div id="newPizza">
+			<p>Create your own pizza!!!</p>
+			<form action="/action_page.php">
+          		<label for="newTitle">New title</label>
+    			<input type="text" id="newTitle"  placeholder="You might call it...">
+
+    			<label for="ingr">Choose the first ingredient</label>
+    			<input type="text" id="ingr"  placeholder="Enter some ingredient...">
+
+    			<label for="myIngred">Choose some sauce</label>
+    			<select id="myIngred" >
+      				<option value="Pomodoro sauce">Pomodoro sauce</option>
+      				<option value="Mustard sauce">Mustard sauce</option>
+      				<option value="Creamy sauce">Creamy sauce</option>
+      				<option value="Basil sauce">Basil sauce</option>
+    			</select>
+
+    			<label for="comments">Enter your comments</label>
+    			<textarea id="comments" placeholder="Write something.." style="height:20vh"></textarea>
+
+    			<button class="btn reset-basket">Create and buy</button>
+  			</form>
+			
+		</div>
+	</footer>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+<script src="main.js"></script>
+</body>
+</html>

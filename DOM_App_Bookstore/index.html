@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>JS DOM TUT</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="app.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<div id="page-banner">
+				<h1 class="title">Bookorama</h1>
+				<p>Books for ALL</p>
+				<!--				<a href="https://www.google.com/">Link</a>-->
+				<form id="search-books">
+					<input type="text" placeholder="Search books....." />
+				</form>
+			</div>
+		</header>
+		<div id="book-list">
+			<h2 class="title">Books to read</h2>
+			<ul>
+				<li>
+					<span class="name">Name of the wind</span>
+					<span class="delete">delete</span>
+				</li>
+				<li>
+					<span class="name">The Wise Man's</span>
+					<span class="delete">delete</span>
+				</li>
+				<li>
+					<span class="name">Kafka on the Shore</span>
+					<span class="delete">delete</span>
+				</li>
+				<li>
+					<span class="name">The Master and the Margarita</span>
+					<span class="delete">delete</span>
+				</li>
+			</ul>
+		</div>
+		<form id="add-book">
+			<div>
+			    <label id="label" for="hide">Hide all books</label>
+				<input type="checkbox" id="hide">
+			</div>
+			<input type="text" placeholder="Add a book...">
+			<button>Add</button>
+		</form>
+		<div id="tabbed-content">
+			<ul class="tabs">
+				<li data-target="#about" class="active">About</li>
+				<li data-target="#contact">Contact</li>
+			</ul>
+			<div class="panel active" id="about">
+				<p>Content for ABOUT tab...</p>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</div>
+			<div class="panel" id="contact">
+				<p>Content for CONTENT tab...</p>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

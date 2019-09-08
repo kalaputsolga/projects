@@ -1,0 +1,138 @@
+   { 
+	   
+    "123411" : {
+		"image": "images/pizzas/margarita.jpg",
+		"title": "Margarita",
+		"type": ["cheese","vegetarian"],
+		"ingredients": ["Pomodoro sauce", "Mozzarella cheese", "tomatoes"],
+		"price": 145.00,
+		"calories": 505
+	},
+		
+	"123412" : {
+		"image": "images/pizzas/mushroom-meadow.jpg",
+		"title": "Mushroom",
+		"type": ["vegetarian"],
+		"ingredients": ["Mustard sauce", "Mozzarella cheese", "mushrooms champignons", "green onions"],
+		"price": 219.00,
+		"calories": 457
+	},
+		
+	"123413" : {
+		"image": "images/pizzas/four-seasons.jpg",
+		"title": "4 seasons",
+		"type": ["meat", "cheese"],
+		"ingredients": ["Pomodoro sauce", "Mozzarella cheese", "mushrooms champignons", "salami", "cheese Dor Blue"],
+		"price": 219.00,
+		"calories": 503
+	},
+		
+    "123414" : {
+		"image": "images/pizzas/assorti.jpg",
+		"title": "Assorti",
+		"type": ["meat"],
+		"ingredients": ["Pomodoro sauce", "Mozzarella cheese", "pork", "salami", "olives", "sweet pepper", "greenery"],
+		"price": 245.00,
+		"calories": 538
+	},
+		
+	"123415" : {
+		"image": "images/pizzas/vegetarian.jpg",
+		"title": "Vegetarian",
+		"type": ["vegetarian"],
+		"ingredients": ["Pomodoro sauce", "Mozzarella cheese", "mushrooms champignons", "tomatoes", "sweet pepper", "sweet corn", "blue pickled onions", "olives", "greenery"],
+		"price": 249.00,
+		"calories": 380
+	},
+		
+	"123416" : {
+		"image": "images/pizzas/pepperoni.jpg",
+		"title": "Pepperoni",
+		"type": ["meat"],
+		"ingredients": ["Pomodoro sauce", "Mozzarella cheese", "salami"],
+		"price": 239.00,
+		"calories": 503
+	},
+		
+	"123417" : {
+		"image": "images/pizzas/oriental-beauty.jpg",
+		"title": "Oriental",
+		"type": ["meat"],
+		"ingredients": ["Pomodoro sauce", "Mozzarella cheese", "salami", "veal", "tomatoes", "pickled cucumbers", "spicy pepper"],
+		"price": 259.00,
+		"calories": 548
+	},
+		
+	"123418" : {
+		"image": "images/pizzas/quattro-di-carne.jpg",
+		"title": "Di Carne",
+		"type": ["meat"],
+		"ingredients": ["Pomodoro sauce", "Mozzarella cheese", "salami", "bacon", "ham", "hunting sausages", "garlic oil", "greenery"],
+		"price": 255.00,
+		"calories": 547
+	},
+		
+	"123419" : {
+		"image": "images/pizzas/munich.jpg",
+		"title": "Munich",
+		"type": ["meat"],
+		"ingredients": ["Mustard sauce", "Mozzarella cheese", "salami", "marinated onion", "hunting sausages", "smoked chicken breast", "garlic oil", "greenery"],
+		"price": 249.00,
+		"calories": 534
+	},
+		
+	"123420" : {
+		"image": "images/pizzas/classical.jpg",
+		"title": "Classical",
+		"type": ["meat"],
+		"ingredients": ["Pomodoro sauce", "Mozzarella cheese", "salami", "ham", "tomatoes", "mushrooms champignons"],
+		"price": 255.00,
+		"calories": 561
+	},
+		
+	"123421" : {
+		"image": "images/pizzas/hawaiian.jpg",
+		"title": "Hawaiian",
+		"type": ["meat"],
+		"ingredients": ["Creamy sauce", "Mozzarella cheese", "sweet corn", "smoked chicken breast", "pineapple"],
+		"price": 265.00,
+		"calories": 512
+	},
+		
+	"123422" : {
+		"image": "images/pizzas/four-cheeses.jpg",
+		"title": "4 chesses",
+		"type": ["cheese"],
+		"ingredients": ["Creamy sauce", "Mozzarella cheese", "cheese Dor Blue", "Feta cheese", "Parmesan cheese"],
+		"price": 295.00,
+		"calories": 526
+	},
+		
+	"123423" : {
+		"image": "images/pizzas/marine.jpg",
+		"title": "Marine",
+		"type": ["seafood"],
+		"ingredients": ["Basil sauce", "Mozzarella cheese", "seafood mix", "lemon", "greenery"],
+		"price": 349.00,
+		"calories": 515
+	},
+		
+	"123424" : {
+		"image": "images/pizzas/dolce.jpg",
+		"title": "Dolce",
+		"type": ["seafood", "meat"],
+		"ingredients": ["Basil sauce", "Mozzarella cheese", "salmon coldly smoked", "smoked chicken breast", "tomatoes", "black olives", "greenery"],
+		"price": 379.00,
+		"calories": 520
+	},
+		
+	"123425" : {
+		"image": "images/pizzas/hunting.jpg",
+		"title": "Hunting",
+		"type": ["meat"],
+		"ingredients": ["Mustard sauce", "Mozzarella cheese", "hunting sausages", "mushrooms champignons", "pickled cucumbers", "blue pickled onions", "greenery"],
+		"price": 255.00,
+		"calories": 560
+	}
+}
+	

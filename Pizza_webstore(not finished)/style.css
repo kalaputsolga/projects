@@ -1,0 +1,445 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-width: 680px;
+	margin: 0;
+	font-size: 2em;
+  	font-family: Arial, Helvetica, sans-serif;
+	color: #c82a11;
+	text-align: center;
+}
+
+/*====================
+HEADER==============*/
+
+header {
+	width: 100%;
+	height: 12em;
+	background-image: 
+		linear-gradient(
+			rgba(0,0,0,0),
+			rgba(0,0,0,0.2)
+		),
+		url(images/header-bg-1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+h1 {
+	padding: 1em 0 0;
+	margin: 0; 
+	font-size: 2.5em;
+	color: #fff;
+	letter-spacing: 0.033em;
+	text-shadow: 5px 3px 8px rgba(0,0,0,0.4);
+}
+
+header p {
+	font-size: 0.8em;
+	color: #fff;
+	letter-spacing: 0.033em;
+	background-color: rgba(255, 169, 1, 0.4);
+	padding: 1.1em;
+}
+
+/*====================
+NAV==============*/
+nav {
+	-moz-position: sticky;
+	-webkit-position: sticky; 
+    position: sticky;
+    top: 0;
+	z-index: 1;
+}
+
+#nav {
+	width: 100%;
+	height: 8vh;
+    background-color: #eaee;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#nav div {
+	width: 33.33%;
+	
+}
+
+.nav-btn {
+	width: 100%;
+	height: 100%;
+	font-size: 0.7em;
+	color: #fff;
+	letter-spacing: 0.033em;
+	background-color: #37576c;
+	border: 1px solid #2a4151;
+	border-right: none;
+	color: #eee;
+	padding: 10px 24px; 
+	cursor: pointer;
+}
+
+.active, .nav-btn:hover {
+	border-bottom: none;
+	background-color: #2a4151;
+	
+}
+
+#basket {
+	font-size: 0.7em;
+	background-color: #37576c;
+	border: 1px solid #2a4151;
+	color: #eee;
+	
+}
+
+#basket div {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#basket p {
+	margin: 0 10px;
+}
+
+#inBasket {
+	font-size: 0.8em;
+	width: 2em;
+	border: 2px solid #eee;
+	border-radius: 6px;
+	background-color: #ff8a01;
+}
+
+#reset-basket {
+	font-size: 0.6em;
+	display: inline-block;
+	width: 6em;
+	height: 2em;
+	margin: 0 10px;
+	color: #eee;
+	background-color: #b61a03;
+	border: 1px solid #781304;
+	cursor: pointer;
+}
+
+#reset-basket:hover {
+	background-color: #781304;
+}
+
+/*====================
+sorting navigation==============*/
+#sorting-nav {
+	background-color: #2a4151;
+	color: #eee;
+}
+
+#sorting-nav p {
+	margin: 0;
+	padding: 0.5em;
+}
+
+#sort div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#sort button {
+	width: 8em;
+	height: 2em;
+	font-size: 0.7em;
+	color: #eee;
+	margin: 1% 3% 2em;
+	background-color: transparent;
+	border: 2px solid #eee;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#sort button:hover {
+	background-color: #ff8a01;
+}
+
+#sort button:active {
+	background-color: #ff8a01;
+}
+
+/*====================
+filter==============*/
+#filter p {
+	padding: 1%;
+}
+
+.hidden {
+	display: none;
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+    padding-left: 1.5em;
+    margin: 1% 3% 1em;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1em;
+    width: 1em;
+    background-color: transparent;
+    border: 2px solid #eee;
+    border-radius: 4px;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #ff8a01;
+}
+
+
+/*====================
+MAIN==============*/
+#wrapper {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url(/images/ep_naturalwhite.png);
+	background-color: #eee;
+	background-position: center; 
+    background-repeat: repeat; 
+
+}
+
+#menu {
+	width: 95%;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: transparent;
+	}
+
+/*====================
+tiles view==============*/
+.itemBox {
+	perspective: 1000px;
+	
+}
+
+.itemInfo {
+	width: 12em;
+	height: 12em;
+	margin:  1.5em 1.5em;;
+	padding: 0;
+	position: relative;
+	transform: scale(1);
+	transform-style: preserve-3d;
+	transition: transform .5s;
+}
+
+.itemInfo:active{
+	transform: scale(.97);
+	transition: transform .2s;
+}
+
+.itemInfo.flip {
+	transform: rotateY(180deg);
+	
+}
+
+
+.front {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-image: linear-gradient(-45deg, rgba(174, 27, 7, 0.6), rgba(255, 169, 1, 1));
+	background-color: #ff8a01;
+	border: 4px solid #eee;
+	border-radius: 50%;
+	box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+	overflow: hidden;
+	cursor: pointer;
+	backface-visibility: hidden;
+}
+
+.back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 4px solid #eee;
+	border-radius: 50%;
+	box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+	overflow: hidden;
+	cursor: pointer;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.back img {
+	min-width: 420px;
+	height: auto;
+	
+	
+}
+
+.front h2 {
+	width: 6em;
+	font-size: 1.3em;
+	font-weight: 300;
+	letter-spacing: 0.033em;
+	color: #eee;
+	margin: 1.2em 1.2em 0;
+	text-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+/*	padding: 3% 0;*/
+}
+
+.front p {
+	font-size: 0.55em;
+	font-weight: 300;
+	letter-spacing: 0.033em;
+	color: #eee;
+	text-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+	padding: 0 1.4em;
+	margin: 0;
+}
+
+.itemAddings {
+	width: 100%;
+	height: 4em;
+	font-size: 0.7em;
+	letter-spacing: 0.033em;
+	color: #eee;
+	text-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+	padding: 0 1.5em;
+}
+
+#addings {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#addings li {
+	width: 28%;
+	height: 1em;
+}
+#addings label {
+	width: 100%;
+	font-size: 0.6em;
+	margin: 0;
+	padding: 0 0 0 0.4;
+	
+}
+#addings span.checkmark {
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0 1em 0 0;
+	padding: 0;
+}
+
+
+#addings .container input:checked ~ .checkmark {
+  background-color: #2a4151;
+}
+
+
+
+itemUpdatableInfo {
+	width: 100%;
+	
+	
+	
+}
+
+.front span {
+	display: inline-block;
+	font-size: 0.7em;
+	letter-spacing: 0.033em;
+	color: #eee;
+	margin-bottom: 2.5em;
+	text-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+	
+	
+}
+
+
+#addToBasketButton {
+	width: 100%;
+	height: 1.5em;
+	margin: 8% 0;
+}
+#addToBasketButton button {
+	width: 46%;
+	height: 100%;
+	font-size: 0.7em;
+	font-weight: 600;
+/*	letter-spacing: 0.033em;*/
+	border: 2px solid #2a4151;
+	border-radius: 4px;
+	background-color: transparent;
+	color: #2a4151;
+	cursor: pointer;
+}
+
+#addToBasketButton button:hover {
+	background-color: #37576c;
+	color: #eee;
+/*	border: 2px solid #ff8a01;*/
+	cursor: pointer;
+	box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
